@@ -31,13 +31,21 @@ def about(request):
 
 
 def get_item(request, item_id):
+   ''' По указанному id возвращает элемент из списка'''
+   for item in items:
+       if item["id"] == item_id:
+           context = {
+               "item" : item
+           }
+           return render(request, "item_page.html", context)
+           
     
    
 
-   context = {'items': items}
+   
    
 
-   return render(request, 'item_page.html', context, item_id)
+   return render(request, 'item_page.html', context)
     
         
 #    return HttpResponseNotFound(f'страница с id {item_id} не найдена')     
