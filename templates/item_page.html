@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>item_page</title>
 </head>
 <body>
     <h1><a href="/">/Home/</a> <a href="/items">Items/</a> <a href="/about">About/</a></h1>
-    <h1> Приветствую! </h1>
-    <p>Эта главная страница</p>
-    <i>Сайт пока в разработке</i><br>
-    <i> Имя: {{name}}</i>
+    {% for item in items %}
+        {% if item.id == item_id %}
+            имя товара: 
+
+        {% endif %}
+    
+    
+    {% endfor %}   
+        
     
 </body>
 </html>
