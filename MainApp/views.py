@@ -12,7 +12,8 @@ items = [
 
 
 def home(request):
-    return render(request, 'index.html')
+    context = {'name': 'Alexander', 'mail': 'Gulin'}
+    return render(request, 'index.html', context)
 
 def about(request):  
     name = "Иван"
