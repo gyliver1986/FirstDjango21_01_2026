@@ -1,0 +1,47 @@
+[
+{
+    "model": "MainApp.item",
+    "pk": 1,
+    "fields": {
+        "name": "Кроссовки",
+        "brand": "abibas",
+        "count": 10
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 2,
+    "fields": {
+        "name": "Куртка кожаная",
+        "brand": "сударь",
+        "count": 2
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 3,
+    "fields": {
+        "name": "coca_cola 1л",
+        "brand": "никола",
+        "count": 12
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 4,
+    "fields": {
+        "name": "Картофель фри",
+        "brand": "крошка",
+        "count": 0
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 5,
+    "fields": {
+        "name": "кепка",
+        "brand": "нуке",
+        "count": 124
+    }
+}
+]
