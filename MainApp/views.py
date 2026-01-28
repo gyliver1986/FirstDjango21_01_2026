@@ -11,6 +11,7 @@ def home(request):
     context = {'name': 'Alexander', 'mail': 'Gulin'}
     return render(request, 'index.html', context)
 
+
 def about(request):  
     author = {"name": "Иван",
                "soname" : "Петрович",
@@ -38,17 +39,6 @@ def get_item(request, item_id):
     return render(request, "item_page.html", context)
            
     
-   
-
-   
-   
-
-  
-    
-        
-#    return HttpResponseNotFound(f'страница с id {item_id} не найдена')     
-   
-
 def get_items(request):
     context = {'items': Item.objects.all()}
        

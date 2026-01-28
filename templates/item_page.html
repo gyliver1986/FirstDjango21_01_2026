@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
+{% block title %}
     <title>item_page</title>
-</head>
-<body>
-    <header><a href="/">/Home/</a> <a href="/items">Items/</a> <a href="/about">About/</a></header>
+{% endblock %}
     
-    <h2> Имя: {{ item.name }}</h2>
+{% block content %}    
+<h2> Имя: {{ item.name }}</h2>
     <div>
         <p> Количество: {{ item.count | default:"товар отсутствует "}}</p>
     </div>
@@ -18,8 +14,6 @@
     <hr>
     
     <p> <a href="/items"> Назад к списку товара</a></p>
-    
+{% endblock %}   
         
     
-</body>
-</html>

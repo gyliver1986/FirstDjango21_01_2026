@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
-</head>
-<body>
-    <header><a href="/">/Home/</a> <a href="/items">Items/</a> <a href="/about">About/</a></header>
-    <h1> Приветствую! </h1>
-    <p>Эта главная страница</p>
-    <i>Сайт пока в разработке</i><br>
-    <i> Имя: {{name}}</i>
+{% extends 'base.html' %}
     
-</body>
-</html>
+
+{% block title %}
+        <title>Главная страница</title>
+{% endblock %} 
+
+{% block content %}
+        <h1> Приветствую! </h1>
+        <p>Эта главная страница</p>
+        <i> Имя: {{name}}</i>
+    
+{% endblock %}
