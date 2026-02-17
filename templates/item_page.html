@@ -12,8 +12,12 @@
     <div><p>Бренд: {{ item.brand }} </p></div>
     <br>
     <hr>
-    
-    <p> <a href="/items"> Назад к списку товара</a></p>
+    <h3>Цвета</h3> 
+    {% for color  in colors  %}
+        {{ color }} <br>
+    {% endfor %}  
+    <p> <a href="{% url "items-list" %}"> Назад к списку товара</a></p>
+
 {% endblock %}   
         
-    
+

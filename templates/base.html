@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
+{% load static %}   
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% block title %}
+    <title>
+          {% block title %}{% endblock %}
+    </title>    
+
+    
+    {% block style %}
+           <link rel="stylesheet" href="{% static "css/style.css" %}"> 
     {% endblock %}
     
 </head>
 <body>
-    <header><a href="/">/Home/</a> <a href="/items">Items/</a> <a href="/about">About/</a></header>
     
+    {% include "header.html" %}
     <main>
-    {#  Содержимое этого блока уникально на каждой странице #}
-    {% block content %}
-    {% endblock %}
+        {% block content  %}
+        {% endblock  %}
     </main>
 </body>
 </html>
