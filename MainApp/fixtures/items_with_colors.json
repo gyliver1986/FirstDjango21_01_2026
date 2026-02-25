@@ -1,0 +1,76 @@
+[
+{
+    "model": "MainApp.color",
+    "pk": 1,
+    "fields": {
+        "name": "red"
+    }
+},
+{
+    "model": "MainApp.color",
+    "pk": 2,
+    "fields": {
+        "name": "green"
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 1,
+    "fields": {
+        "name": "Кроссовки",
+        "brand": "abibas",
+        "count": 10,
+        "description": "Удобные",
+        "colors": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 2,
+    "fields": {
+        "name": "Куртка кожаная",
+        "brand": "сударь",
+        "count": 2,
+        "description": "теплая\n",
+        "colors": [
+            2
+        ]
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 3,
+    "fields": {
+        "name": "coca_cola 1л",
+        "brand": "никола",
+        "count": 12,
+        "description": "большая вкусная\n",
+        "colors": []
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 4,
+    "fields": {
+        "name": "Картофель фри",
+        "brand": "крошка",
+        "count": 0,
+        "description": "по деревенски",
+        "colors": []
+    }
+},
+{
+    "model": "MainApp.item",
+    "pk": 5,
+    "fields": {
+        "name": "кепка",
+        "brand": "нуке",
+        "count": 124,
+        "description": "красная\n",
+        "colors": []
+    }
+}
+]

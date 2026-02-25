@@ -1,6 +1,11 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
     <title>item_page</title>
+{% endblock %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static "/css/color.css" %}"> 
 {% endblock %}
     
 {% block content %}    
@@ -13,9 +18,24 @@
     <br>
     <hr>
     <h3>Цвета</h3> 
-    {% for color  in colors  %}
-        {{ color }} <br>
-    {% endfor %}  
+
+    <ul class='ul_no_mark'>
+        {% for color  in colors  %}
+           <li>
+                <span class="color-box" style='background-color: {{ color.name }};'></span> {{ color.name }}
+
+           </li> 
+
+            
+
+        {%empty%}
+            Информация о товаре отсутствует    
+        {% endfor %}
+    </ul>
+
+
+    
+
     <p> <a href="{% url "items-list" %}"> Назад к списку товара</a></p>
 
 {% endblock %}   

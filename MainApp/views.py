@@ -41,7 +41,8 @@ def get_item(request, item_id):
            
     
 def get_items(request):
-    context = {'items': Item.objects.all()}
+    item = Item.objects.all()
+    context = {'items': item }
        
         
     return render(request, 'items_list.html', context) 

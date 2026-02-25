@@ -13,8 +13,8 @@
 }   
 
 .item:hover {
-    background: rgb(207, 232, 237);
-    box-shadow: 4px 8px 16px rgba(71, 215, 240);
+    background: rgb(24, 160, 42);
+    box-shadow: 4px 8px 16px rgb(15, 160, 71);
 }
 
 .item p{
